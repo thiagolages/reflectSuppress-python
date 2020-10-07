@@ -1,3 +1,18 @@
+# single image reflection suppression via gradient thresholding and solving
+# PDE using discrete cosine transform(DCT)
+
+# Input:
+# Im      - the input image
+# h       - the gradient thresholding parameter
+# epsilon - the epsilon in Eq.(3) in the paper
+
+# Output:
+# T - the dereflected image
+
+
+# Sample run:
+# python main.py 
+
 import cv2
 from reflectSuppress import reflectSuppress
 import matplotlib.pyplot as plt
