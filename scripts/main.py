@@ -15,7 +15,6 @@
 
 import cv2
 from reflectSuppress import reflectSuppress
-import matplotlib.pyplot as plt
 import numpy as np
 
 def show_image(img, title='img', sizex=1280, sizey=720, wait=True, destroy=True):
@@ -37,10 +36,10 @@ def show_image(img, title='img', sizex=1280, sizey=720, wait=True, destroy=True)
 
 if __name__ == '__main__':
 
-    img_path = '../figures/Child_Glass.jpg'
+    img_path = '../figures/tree.jpg'
 
-    h = 0.033
-    epsilon = 1e-8 
+    h = 0.066       # the gradient thresholding parameter
+    epsilon = 1e-8  # the epsilon in Eq.(3) in the paper
     
     img_extension = img_path.split('/')[-1].split('.')[-1]
     img_name      = img_path.split('/')[-1].split('.')[-2]
