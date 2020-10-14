@@ -14,3 +14,5 @@ Original Paper: [link](https://openaccess.thecvf.com/content_CVPR_2019/papers/Ya
   - `pip install PyWavelets`
 - Scipy 
   - `pip install scipy`
+
+To-do: add requirements.txt
